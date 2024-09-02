@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 60%;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background: linear-gradient(rgb(12, 12, 12, 0.8)),(rgb(20, 20, 20, 1)), ;
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    background-color: crimson;
+    background-image: url("Los_Santos_Gym_interior.webp")
+}
+header{
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(41, 41, 41);
+    
+}
+.menu-content{
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+
+}
+.logo{
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+    color: white;
+
+}
+.menu-content .list-items{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+}
+.menu-content .list-items a {
+    text-decoration: none;
+    color: blanchedalmond;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+.menu-content .list-items a:before{
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: coral;
+    transition: all 1.5s ease-in;
+    justify-content: center;
+    align-items: center;
+
+}
+.menu-content .list-items a:hover:before{
+    width: 100%;
+    
+}
+ 
+main{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt1{
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom:2rem ;
+    text-align: center;
+}
+.txt2{
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    color: gainsboro;
+    gap: 20px;
+    text-align: justify;
+    position: static;
+ 
+}
+.butt{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+.butt button{
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+}
+.butt button:before{
+    content: ' ';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: gray;
+    z-index: -1;
+    transition: 1.5s;
+}
+.butt button:hover{
+    width: 100%;
+    color: crimson;
+}
+.btns button:hover:before {
+    width: 100%;
+}
